@@ -135,7 +135,7 @@ I am a server independent http response object.'>
 
     nextPutAll: aString [
 	<category: 'streaming'>
-	aString do: [:ea | self nextPut: ea]
+	stream nextPutAll: aString.
     ]
 
     space [
