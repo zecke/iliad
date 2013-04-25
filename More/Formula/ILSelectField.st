@@ -60,13 +60,17 @@ ILOptionField subclass: ILSelectField [
 
     fieldContents [
 	<category: 'building'>
-	^[:e | 
+	^[:e | | val |
 	    e select build: [:select |
-		self isMultiple ifTrue: [select beMultiple].
+                val := self value.
+		self isMultiple ifTrue: [
+                    self value: OrderedCollection new.
+                    select beMultiple].
+
 		self options do: [:each |
 		    select option build: [:option |
 			option selected: (self isMultiple
-			    ifTrue: [self value includes: each]
+			    ifTrue: [val includes: each]
 			    ifFalse: [self value = each]).
 			self optionLabelBlock value: option value: each.
 			option action: [self isMultiple
