@@ -44,6 +44,6 @@ do
     if [ $REGEN -eq 1 ]||[ $FORCE -eq 1 ]
     then
 	echo "  packaging..."
-	$GST_PACK -t ~/.st $DIR/package.xml >> make_packages.log
+	$GST_PACK $DIR/package.xml >> make_packages.log
     fi
 done
