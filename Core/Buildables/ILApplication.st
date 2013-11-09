@@ -224,8 +224,9 @@ your own selectorFilter or plug it in using the class method #selectorFilter:'>
 	 super should always be called"
 	<category: 'updating'>
 
-	aPage head javascript src: '/javascripts/jquery-1.4.4.min.js'.
+	aPage head javascript src: '/javascripts/jquery-1.10.2.min.js'.
 	aPage head javascript src: '/javascripts/no_conflict.js'.
+	aPage head javascript src: '/javascripts/jquery-migrate-1.2.1.min.js'.
 	aPage head javascript src: '/javascripts/iliad.js'.
     ]
 

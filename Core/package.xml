@@ -251,9 +251,11 @@
   <file>Public/images/iliad_huge.png</file>
   <file>Public/images/iliad.png</file>
   <file>Public/images/iliad_bleached.png</file>
+  <file>Public/javascripts/jquery-1.10.2.min.js</file>
   <file>Public/javascripts/jquery-ui-1.8.24.min.js</file>
   <file>Public/javascripts/no_conflict.js</file>
   <file>Public/javascripts/iliad_ie_history.html</file>
-  <file>Public/javascripts/jquery-1.4.4.min.js</file>
+  <file>Public/javascripts/jquery-migrate-1.2.1.min.js</file>
+  <file>Public/javascripts/jquery.min.map</file>
   <file>Public/javascripts/iliad.js</file>
 </package>
